@@ -1,0 +1,566 @@
+.catalog {
+    margin-bottom: 80px;
+    padding-bottom: 1px;
+}
+
+.cotainer-title-choise {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.catalog-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    margin-right: 41px;
+}
+
+.choice-country-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 11px;
+}
+
+.choice-country-items:not(:last-child) {
+    margin-right: 50px;
+}
+
+.choice-country-items-btn {
+    width: 46px;
+    height: 46px;
+    border: none;
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    outline: none;
+    -webkit-transition-property: -webkit-filter, -webkit-box-shadow;
+    transition-property: -webkit-filter, -webkit-box-shadow;
+    -o-transition-property: filter, box-shadow;
+    transition-property: filter, box-shadow;
+    transition-property: filter, box-shadow, -webkit-filter, -webkit-box-shadow;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .15s;
+    -o-transition-duration: .15s;
+    transition-duration: .15s;
+}
+
+.choice-country-items-btn:hover {
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+    filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+}
+
+.choice-country-items-btn:active {
+    -webkit-box-shadow: 0 0 0 2px #9D5CD0;
+    box-shadow: 0 0 0 2px #9D5CD0;
+}
+
+.choice-country-items-btn:focus {
+    -webkit-box-shadow: 0 0 0 2px #9D5CD0;
+    box-shadow: 0 0 0 2px #9D5CD0;
+}
+
+.choice-country-items-btn-is-active {
+    -webkit-box-shadow: 0 0 0 8px white, 0 0 0 10px #9D5CD0 !important;
+    box-shadow: 0 0 0 8px white, 0 0 0 10px #9D5CD0 !important;
+}
+
+.france {
+    background-image: url("../img/catalog/france.svg");
+}
+
+.germany {
+    background-image: url("../img/catalog/germany.svg");
+}
+
+.italy {
+    background-image: url("../img/catalog/italy.svg");
+}
+
+.russia {
+    background-image: url("../img/catalog/russia.svg");
+}
+
+.belgium {
+    background-image: url("../img/catalog/belgium.svg");
+}
+
+.country-content {
+    display: none;
+}
+
+.country-is-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.catalog-discribe {
+    max-width: 1080px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 39px;
+}
+
+
+/*ACCORDION*/
+
+.accordion {
+    margin-left: auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.accordion-content {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #CACACA;
+    -webkit-transition: border-color .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out;
+    transition: border-color .15s ease-in-out;
+    margin-top: -1px;
+}
+
+.accordion-content:first-child {
+    border-top: 1px solid #CACACA;
+}
+
+.accordion-content:hover {
+    border-color: #9D5CD0;
+}
+
+.accordion-content:active {
+    border-color: #7943A4;
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 34px 3px 33px 0;
+    font-size: 24px;
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: 'OpenSans', sans-serif;
+}
+
+.accordion-content-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: inherit;
+    color: #333333;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+
+.accordion-content-btn:focus {
+    outline: 2px solid #7943A4;
+    outline-offset: 7px;
+}
+
+.accordion-content-btn:hover {
+    color: #9D5CD0;
+}
+
+.accordion-content-btn:active {
+    color: #7943A4;
+}
+
+.accordion-header-icon {
+    background-image: url("../img/catalog/accordion-header-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    -webkit-transition-property: background-image, -webkit-transform;
+    transition-property: background-image, -webkit-transform;
+    -o-transition-property: transform, background-image;
+    transition-property: transform, background-image;
+    transition-property: transform, background-image, -webkit-transform;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 1s, .15s;
+    -o-transition-duration: 1s, .15s;
+    transition-duration: 1s, .15s;
+}
+
+.accordion-header-icon-active {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.ui-accordion .ui-accordion-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ui-state-hover .ui-icon {
+    background-image: url("../img/catalog/accordion-header-icon-hover.svg");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.ui-state-focus .ui-icon {
+    background-image: url("../img/catalog/accordion-header-icon-hover.svg");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-ico {
+    background-image: url("../img/catalog/accordion-header-icon-active.svg");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-top: 1px solid #9D5CD0;
+    border-bottom: 1px solid #9D5CD0;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+
+/*ACCRODION DROPLIST*/
+
+.accordion-content-droplist {
+    height: 343px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.accordion-droplist-btn-container {
+    display: inline-block;
+    min-height: 32px;
+    max-width: 208px;
+}
+
+.accordion-content-droplist-btn {
+    margin-left: 2px;
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    padding: 0;
+    padding-left: 2px;
+    text-align: left;
+}
+
+.accordion-content-droplist-btn-is-open {
+    color: #9D5CD0;
+}
+
+.accordion-content-droplist-btn:focus {
+    outline: 2px solid #7943A4;
+    outline-offset: 0;
+}
+
+.accordion-content-droplist-btn:hover {
+    color: #9D5CD0;
+    border-bottom: 1px solid #9D5CD0;
+    -webkit-transition: color .15s ease-in-out;
+    -o-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out;
+}
+
+.accordion-content-droplist-btn:active {
+    color: #7943A4;
+}
+
+
+/*Discribe artist block*/
+
+.catalog-discribe-artist-container {
+    max-width: 750px;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.artist-portrait {
+    width: 100%;
+    height: 470px;
+    margin-bottom: 31px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.portrait-domenico-ghirlandaio {
+    background-image: url("../img/catalog/domenico-ghirlandaio.jpg");
+}
+
+.artist-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 6px;
+}
+
+.artist-years {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #CACACA;
+    margin-bottom: 6px;
+}
+
+.artist-discribe {
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    line-height: 32px;
+}
+
+.artist-active {
+    display: block !important;
+}
+
+.artist-hidden {
+    display: none;
+}
+
+@media(max-width:1350px) {
+    .catalog-discribe-artist-container {
+        max-width: 437px;
+    }
+    .artist-portrait {
+        height: 274px;
+    }
+}
+
+@media(max-width:1175px) {
+    .catalog-discribe {
+        max-width: none;
+    }
+    .catalog-discribe-artist-container {
+        max-width: 437px;
+    }
+    .choice-country-list {
+        padding-top: 19px;
+    }
+    .accordion {
+        max-width: none;
+        margin-left: 0;
+    }
+    .accordion-content-btn {
+        padding-left: 0;
+    }
+    .accordion-content-droplist {
+        height: 440px;
+    }
+    .ui-accordion .ui-accordion-content {
+        margin-top: 0;
+    }
+    .cotainer-title-choise {
+        margin-bottom: 14px;
+    }
+    .accordion-header-icon {
+        margin-top: 2px;
+    }
+    .ui-accordion .ui-accordion-header {
+        padding: 29px 0 30px 0;
+    }
+}
+
+@media(max-width:952px) {
+    .catalog {
+        padding-bottom: 0;
+        margin-bottom: 70px;
+    }
+    .cotainer-title-choise {
+        margin-bottom: 16px;
+    }
+    .choice-country-items:not(:last-child) {
+        margin-right: 54px;
+    }
+    .choice-country-list {
+        padding-top: 12px;
+    }
+    .catalog-discribe {
+        margin-bottom: 20px;
+    }
+    .country-is-active {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .accordion {
+        max-width: none;
+        margin-bottom: 50px;
+    }
+    .accordion-content-droplist {
+        height: 344px;
+    }
+    .catalog-discribe-artist-container {
+        max-width: none;
+    }
+    .portrait-domenico-ghirlandaio {
+        background-image: url("../img/catalog/domenico-ghirlandaio-768.jpg");
+    }
+    .artist-portrait {
+        max-width: none;
+        height: auto;
+        min-height: 419px;
+    }
+    .accordion-header-icon {
+        margin-top: -2px;
+    }
+    .ui-accordion .ui-accordion-header {
+        padding: 31px 0 32px 0;
+    }
+}
+
+@media(max-width:740px) {
+    .choice-country-items:not(:last-child) {
+        margin-right: 32px;
+    }
+    .choice-country-items-btn {
+        width: 32px;
+        height: 32px;
+    }
+    .catalog-title {
+        margin-right: 20px;
+    }
+    .choice-country-items {
+        margin-top: 7px;
+    }
+    .accordion-content-droplist {
+        height: 500px;
+    }
+}
+
+@media(max-width:625px) {
+    .accordion {
+        margin-bottom: 50px;
+    }
+    .accordion-content-droplist {
+        max-height: 810px;
+    }
+    .choice-country-items-btn-is-active {
+        -webkit-box-shadow: 0 0 0 4px white, 0 0 0 6px #9D5CD0 !important;
+        box-shadow: 0 0 0 4px white, 0 0 0 6px #9D5CD0 !important;
+    }
+    .ui-accordion .ui-accordion-header {
+        padding: 19px 0px 20px 0;
+    }
+    .catalog-title {
+        font-size: 28px;
+        line-height: 38px;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .cotainer-title-choise {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 19px;
+    }
+    .choice-country-list {
+        padding-top: 0;
+    }
+    .catalog-discribe {
+        display: none;
+    }
+    .portrait-domenico-ghirlandaio {
+        background-image: url("../img/catalog/domenico-ghirlandaio-320.jpg");
+    }
+    .artist-portrait {
+        background-position: center center;
+        min-height: 181px;
+        margin-bottom: 20px;
+    }
+    .accordion-content-btn {
+        font-size: 18px;
+    }
+    .accordion-header-icon {
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .ui-state-hover .ui-icon {
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .ui-state-focus .ui-icon {
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .ui-state-active .ui-icon,
+    .ui-button:active .ui-ico {
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .ui-accordion .ui-accordion-header {
+        font-size: 18px;
+    }
+    .ui-accordion .ui-accordion-content {
+        padding-top: 16px;
+    }
+    .accordion-content-droplist {
+        height: 806px;
+    }
+    .artist-name {
+        margin-bottom: 11px;
+    }
+    .artist-discribe {
+        max-width: 289px;
+    }
+    .catalog {
+        margin-bottom: 52px;
+    }
+}

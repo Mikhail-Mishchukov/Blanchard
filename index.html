@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanchard</title>
+    <link rel="preload" href="fonts/OpenSansBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSansRegular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSansSemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/simplebar.css">
+    <script defer src="script/simplebar.js"></script>
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <script defer src="script/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/about.css">
+    <script defer src="script/choices.min.js"></script>
+    <link rel="stylesheet" href="style/choices.min.css">
+    <script defer src="script/graph-modal.min.js"></script>
+    <link rel="stylesheet" href="style/graph-modal.min.css">
+    <link rel="stylesheet" href="style/gallery.css">
+    <script defer src="script/jquery-1.12.4.js"></script>
+    <script defer src="script/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style/catalog.css">
+    <link rel="stylesheet" href="style/event.css">
+    <link rel="stylesheet" href="style/publication.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/contacts.css">
+    <script defer src="script/inputmask.min.js"></script>
+    <script src="script/just-validate.min.js"></script>
+    <script src="script/yandex-map.js"></script>
+    <link rel="stylesheet" href="style/footer.css">
+    <script defer src="script/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="visually-hidden">Blanchard художественная галерея </h1>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__container">
+                    <button class="header-top__burger"></button>
+                    <img src="img/header/logo.svg" alt="Blanchard художественная галерея" class="header-top__logo">
+                    <button type="button" class="header-top__form-btn"></button>
+                    <form class="form-search">
+                        <button type="button" class="form-search__btn"></button>
+                        <input type="search" class="form-search__input">
+                        <button type="button" class="form-search__close-btn"></button>
+                    </form>
+                    <nav class="header-top__nav">
+                        <button class="header-top__close-btn"></button>
+                        <ul class="header-top__list">
+                            <li class="header-top__items"><a class="header-top__link" href="#about">О&nbsp;нас</a></li>
+                            <li class="header-top__items"><a class="header-top__link" href="#gallery">Галерея</a></li>
+                            <li class="header-top__items"><a class="header-top__link" href="#catalog">Каталог</a></li>
+                            <li class="header-top__items"><a class="header-top__link" href="#events">События</a></li>
+                            <li class="header-top__items"><a class="header-top__link" href="#publication">Издания</a></li>
+                            <li class="header-top__items"><a class="header-top__link" href="#projects">Проекты</a></li>
+                            <li class="header-top__items"><a class="header-top__link" href="#contacts">Контакты</a></li>
+                        </ul>
+                        <a class="header-top__login-mobile" href="">Войти</a>
+                    </nav>
+                    <a class="header-top__login" href="#">Войти</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom__container">
+                    <ul class="direction-art">
+                        <li class="direction-art__items">
+                            <button data-direction="realism" class="direction-art__btn">Реализм</button>
+                            <ul data-simplebar data-target="realism" class="direction-art__droplist">
+                                <li class="direction-art__dropitems direction-art__dropitems_realism"><a class="direction-art__link" href="#">Тинторетто</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_realism"><a class="direction-art__link" href="#">Фридрих</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_realism"><a class="direction-art__link" href="#">Леонардо</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_realism"><a class="direction-art__link" href="#">Верроккьо</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_realism"><a class="direction-art__link" href="#">Верроккьо</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_realism"><a class="direction-art__link" href="#">Верроккьо</a></li>
+                            </ul>
+                        </li>
+                        <li class="direction-art__items">
+                            <button data-direction="impressionism" class="direction-art__btn">Импрессионизм</button>
+                            <ul data-simplebar data-target="impressionism" class="direction-art__droplist">
+                                <li class="direction-art__dropitems direction-art__dropitems_impressionism"><a class="direction-art__link" href="#">Моне</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_impressionism"><a class="direction-art__link" href="#">Сислей</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_impressionism"><a class="direction-art__link" href="#">Мане</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_impressionism"><a class="direction-art__link" href="#">Ренуар</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_impressionism"><a class="direction-art__link" href="#">Ренуар</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_impressionism"><a class="direction-art__link" href="#">Ренуар</a></li>
+                            </ul>
+                        </li>
+                        <li class="direction-art__items">
+                            <button data-direction="post-impressionism" class="direction-art__btn">Постимпрессионизм</button>
+                            <ul data-simplebar data-target="post-impressionism" class="direction-art__droplist">
+                                <li class="direction-art__dropitems direction-art__dropitems_post"><a class="direction-art__link" href="#">Ван Гог</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_post"><a class="direction-art__link" href="#">Сезанн</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_post"><a class="direction-art__link" href="#">Гоген</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_post"><a class="direction-art__link" href="#">Сёра</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_post"><a class="direction-art__link" href="#">Сёра</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_post"><a class="direction-art__link" href="#">Сёра</a></li>
+                            </ul>
+                        </li>
+                        <li class="direction-art__items">
+                            <button data-direction="avangard" class="direction-art__btn">Авангард</button>
+                            <ul data-simplebar data-target="avangard" class="direction-art__droplist">
+                                <li class="direction-art__dropitems direction-art__dropitems_avangard"><a class="direction-art__link" href="#">Кандинский</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_avangard"><a class="direction-art__link" href="#">Маринетти</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_avangard"><a class="direction-art__link" href="#">Малевич</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_avangard"><a class="direction-art__link" href="#">Пикассо</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_avangard"><a class="direction-art__link" href="#">Пикассо</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_avangard"><a class="direction-art__link" href="#">Пикассо</a></li>
+                            </ul>
+                        </li>
+                        <li class="direction-art__items">
+                            <button data-direction="futurism" class="direction-art__btn">Футуризм</button>
+                            <ul data-simplebar data-target="futurism" class="direction-art__droplist">
+                                <li class="direction-art__dropitems direction-art__dropitems_futurism"><a class="direction-art__link" href="#">Карра</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_futurism"><a class="direction-art__link" href="#">Прателла</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_futurism"><a class="direction-art__link" href="#">Северини</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_futurism"><a class="direction-art__link" href="#">Балла</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_futurism"><a class="direction-art__link" href="#">Балла</a></li>
+                                <li class="direction-art__dropitems direction-art__dropitems_futurism"><a class="direction-art__link" href="#">Балла</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="header-bottom__form">
+                        <button type="submit" class="header-bottom__btn"></button>
+                        <input class="header-bottom__input" placeholder="Поиск по сайту" type="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-contianer-content">
+                    <div class="hero-content">
+                        <h2 class="hero-content-title">Прикоснитесь к&nbsp;прекрасному</h2>
+                        <p class="hero-content-discribe">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                        <button class="hero-content-btn">Подписаться на рассылку</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="swiper-hero" class="swiper-container swiper-container-hero ">
+                <div class="swiper-wrapper swiper-wrepper-hero">
+                    <div class="swiper-slide hero-swiper-img1 hero-swiper-img">
+                    </div>
+                    <div class="swiper-slide hero-swiper-img2 hero-swiper-img">
+                    </div>
+                    <div class="swiper-slide hero-swiper-img3 hero-swiper-img">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 id="about" class="about-title">О нас</h2>
+                <p class="about-discribe">Ясность нашей позиции очевидна: семантический разбор внешних противодействий&nbsp;однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако,
+                    забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная&nbsp;практика показывает, что высокое качество позиционных исследований создаёт необходимость
+                    включения в производственный&nbsp;план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают
+                    популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-container">
+                    <div class="gallery-sort-container">
+                        <h2 id="gallery" class="gallery-title">Галерея</h2>
+                        <p class="gallery-sort-discribe">Фильтровать по:</p>
+                        <div class="gallery-sort-select-container">
+                            <select name="categories" class="gallery-sort-select">
+                            <option value="author">Автор</option>
+                            <option value="direction">Направление</option>
+                            <option value="technic">Техника</option>
+                            </select>
+                        </div>
+                        <p class="gallery-sort-buttom-discribe gallery-sort-discribe-tablet">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="gallery-sort-buttom-discribe-link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией. </p>
+                    </div>
+
+                    <div class="gallery-exhibition-container">
+                        <div id="swiper-gallery" class="swiper-container swiper-container-gallery">
+                            <div class="swiper-gallery-nav-container nav-container-tablet">
+                                <div class="swiper-button-prev-gallery"></div>
+                                <div class="swiper-pagination swiper-pagination-gallery"></div>
+                                <div class="swiper-button-next-gallery"></div>
+                            </div>
+                            <div class="swiper-wrapper swiper-wreper-gallery-mobile">
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-1"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-2"></div>
+                                <button data-graph-path="first" data-graph-animation="fadeInUp" data-graph-speed="500" class="swiper-slide swiper-slide-gallery gallery-picture-3"></button>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-4"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-5"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-6"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-7"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-8"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-9"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-10"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-11"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-12"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-13"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-14"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-15"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-16"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-17"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-18"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-19"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-20"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-21"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-22"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-23"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-24"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-25"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-26"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-27"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-28"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-29"></div>
+                                <div class="swiper-slide swiper-slide-gallery gallery-picture-30"></div>
+
+
+
+                            </div>
+                            <div class="swiper-gallery-nav-container nav-container-mobile">
+                                <div class="swiper-button-prev-gallery"></div>
+                                <div class="swiper-pagination swiper-pagination-gallery"></div>
+                                <div class="swiper-button-next-gallery"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="gallery-sort-buttom-discribe gallery-sort-discribe-mobile">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="gallery-sort-buttom-discribe-link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией. </p>
+                </div>
+            </div>
+        </section>
+        <div class="modal">
+            <div class="modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+                <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+                <div class="modal-content">
+                    <div class="modal-content__container">
+                        <div class="modal-content__img gallery-picture-3-modal"></div>
+                        <div class="modal-content__img-discribe">
+                            <h3 class="modal-content__author">Казимир Малевич</h3>
+                            <span class="modal-content__name">“Женщина с граблями”</span>
+                            <span class="modal-content__years">1931-1932</span>
+                            <p class="modal-content__discribe">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="catalog">
+            <div class="container">
+                <div class="cotainer-title-choise">
+                    <h2 id="catalog" class="catalog-title">Каталог</h2>
+                    <ul class="choice-country-list">
+                        <li class="choice-country-items ">
+                            <button data-country="france" class="choice-country-items-btn  france"></button>
+                        </li>
+                        <li class="choice-country-items ">
+                            <button data-country="germany" class="choice-country-items-btn   germany"></button>
+                        </li>
+                        <li class="choice-country-items ">
+                            <button data-country="italy" class="choice-country-items-btn  choice-country-items-btn-is-active italy"></button>
+                        </li>
+                        <li class="choice-country-items ">
+                            <button data-country="russia" class="choice-country-items-btn  russia"></button> </li>
+                        <li class="choice-country-items ">
+                            <button data-country="belgium" class="choice-country-items-btn  belgium"></button>
+                        </li>
+                    </ul>
+                </div>
+                <p class="catalog-discribe">
+                    Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры,&nbsp;будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся
+                    вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                </p>
+                <div data-target="france" class="country-content ">
+                    <div id="artistfrance" class="catalog-discribe-artist-container">
+                        <div data-target="domenico-ghirlandaiof" class="artist-hidden artist-active ">
+                            <div class="artist-portrait portrait-domenico-ghirlandaio"></div>
+                            <h3 class="artist-name">Доменико Гирландайо</h3>
+                            <span class="artist-years">2 июня 1448 — 11 января 1494.</span>
+                            <p class="artist-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <ul class="accordion">
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1400 по 1499 гг.
+                            </button>
+                            <div class="accordion-content-droplist">
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бенедетто ди Биндо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бергоньоне, Амброджо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Биссоло, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Больтраффио, Джованни</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бонсиньори, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Боттичини, Рафаэлло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Брамантино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бреа, Людовико</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бьяджо д’Антонио Туччи</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Веккьетта</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Андреа Верроккьо</button></div>
+                                <div class="accordion-droplist-btn-container"><button data-artist="domenico-ghirlandaiof" class="accordion-content-droplist-btn ">Доменико Гирландайо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Беноццо Гоццоли</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Граначчи, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Грегорио ди Чекко</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни да Удине</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни ди Паоло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джорджоне</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Парентино, Бернардо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пезеллино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пьетро Перуджино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Перуцци, Бальдассаре</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пизанелло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пинтуриккьо</button></div>
+                            </div>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                   C 1500 по 1599 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1600 по 1699 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1700 по 1799 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1800 по 1899 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1900 по 1999 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 2000 г.
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+                <div data-target="germany" class="country-content">
+                    <div class="catalog-discribe-artist-container">
+                        <div data-target="domenico-ghirlandaiog" class="artist-hidden artist-active ">
+                            <div class="artist-portrait portrait-domenico-ghirlandaio"></div>
+                            <h3 class="artist-name">Доменико Гирландайо</h3>
+                            <span class="artist-years">2 июня 1448 — 11 января 1494.</span>
+                            <p class="artist-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+                        </div>
+                    </div>
+
+
+
+                    <ul class="accordion">
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1400 по 1499 гг.
+                            </button>
+                            <div class="accordion-content-droplist">
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бенедетто ди Биндо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бергоньоне, Амброджо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Биссоло, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Больтраффио, Джованни</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бонсиньори, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Боттичини, Рафаэлло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Брамантино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бреа, Людовико</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бьяджо д’Антонио Туччи</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Веккьетта</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Андреа Верроккьо</button></div>
+                                <div class="accordion-droplist-btn-container"><button data-artist="domenico-ghirlandaiog" class="accordion-content-droplist-btn accordion-content-droplist-btn-is-open">Доменико Гирландайо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Беноццо Гоццоли</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Граначчи, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Грегорио ди Чекко</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни да Удине</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни ди Паоло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джорджоне</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Парентино, Бернардо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пезеллино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пьетро Перуджино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Перуцци, Бальдассаре</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пизанелло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пинтуриккьо</button></div>
+                            </div>
+
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                   C 1500 по 1599 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1600 по 1699 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1700 по 1799 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1800 по 1899 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1900 по 1999 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 2000 г.
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+                <div data-target="italy" class="country-content country-is-active">
+                    <div class="catalog-discribe-artist-container">
+                        <div data-target="domenico-ghirlandaioi" class="artist-hidden artist-active ">
+                            <div class="artist-portrait portrait-domenico-ghirlandaio"></div>
+                            <h3 class="artist-name">Доменико Гирландайо</h3>
+                            <span class="artist-years">2 июня 1448 — 11 января 1494.</span>
+                            <p class="artist-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+                        </div>
+                    </div>
+
+
+                    <ul class="accordion">
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1400 по 1499 гг.
+                            </button>
+                            <div class="accordion-content-droplist">
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бенедетто ди Биндо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бергоньоне, Амброджо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Биссоло, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Больтраффио, Джованни</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бонсиньори, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Боттичини, Рафаэлло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Брамантино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бреа, Людовико</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бьяджо д’Антонио Туччи</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Веккьетта</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Андреа Верроккьо</button></div>
+                                <div class="accordion-droplist-btn-container"><button data-artist="domenico-ghirlandaioi" class="accordion-content-droplist-btn accordion-content-droplist-btn-is-open">Доменико Гирландайо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Беноццо Гоццоли</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Граначчи, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Грегорио ди Чекко</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни да Удине</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни ди Паоло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джорджоне</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Парентино, Бернардо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пезеллино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пьетро Перуджино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Перуцци, Бальдассаре</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пизанелло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пинтуриккьо</button></div>
+                            </div>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                   C 1500 по 1599 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1600 по 1699 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1700 по 1799 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1800 по 1899 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1900 по 1999 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 2000 г.
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+                <div data-target="russia" class="country-content">
+                    <div class="catalog-discribe-artist-container">
+                        <div data-target="domenico-ghirlandaior" class="artist-hidden artist-active ">
+                            <div class="artist-portrait portrait-domenico-ghirlandaio"></div>
+                            <h3 class="artist-name">Доменико Гирландайо</h3>
+                            <span class="artist-years">2 июня 1448 — 11 января 1494.</span>
+                            <p class="artist-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+                        </div>
+                    </div>
+
+
+
+                    <ul class="accordion">
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1400 по 1499 гг.
+                            </button>
+                            <div class="accordion-content-droplist">
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бенедетто ди Биндо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бергоньоне, Амброджо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Биссоло, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Больтраффио, Джованни</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бонсиньори, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Боттичини, Рафаэлло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Брамантино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бреа, Людовико</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бьяджо д’Антонио Туччи</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Веккьетта</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Андреа Верроккьо</button></div>
+                                <div class="accordion-droplist-btn-container"><button data-artist="domenico-ghirlandaior" class="accordion-content-droplist-btn accordion-content-droplist-btn-is-open">Доменико Гирландайо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Беноццо Гоццоли</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Граначчи, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Грегорио ди Чекко</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни да Удине</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни ди Паоло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джорджоне</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Парентино, Бернардо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пезеллино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пьетро Перуджино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Перуцци, Бальдассаре</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пизанелло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пинтуриккьо</button></div>
+                            </div>
+
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                   C 1500 по 1599 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1600 по 1699 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1700 по 1799 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1800 по 1899 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1900 по 1999 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 2000 г.
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div data-target="belgium" class="country-content">
+                    <div class="catalog-discribe-artist-container">
+                        <div data-target="domenico-ghirlandaiob" class="artist-hidden artist-active ">
+                            <div class="artist-portrait portrait-domenico-ghirlandaio"></div>
+                            <h3 class="artist-name">Доменико Гирландайо</h3>
+                            <span class="artist-years">2 июня 1448 — 11 января 1494.</span>
+                            <p class="artist-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+                        </div>
+                    </div>
+
+
+
+                    <ul class="accordion">
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1400 по 1499 гг.
+                            </button>
+                            <div class="accordion-content-droplist">
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бенедетто ди Биндо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бергоньоне, Амброджо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Биссоло, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Больтраффио, Джованни</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бонсиньори, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Боттичини, Рафаэлло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Брамантино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бреа, Людовико</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Бьяджо д’Антонио Туччи</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Веккьетта</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Андреа Верроккьо</button></div>
+                                <div class="accordion-droplist-btn-container"><button data-artist="domenico-ghirlandaiob" class="accordion-content-droplist-btn accordion-content-droplist-btn-is-open">Доменико Гирландайо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Беноццо Гоццоли</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Граначчи, Франческо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Грегорио ди Чекко</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни да Удине</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джованни ди Паоло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Джорджоне</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Парентино, Бернардо</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пезеллино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пьетро Перуджино</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Перуцци, Бальдассаре</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пизанелло</button></div>
+                                <div class="accordion-droplist-btn-container"><button class="accordion-content-droplist-btn">Пинтуриккьо</button></div>
+                            </div>
+
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                   C 1500 по 1599 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1600 по 1699 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1700 по 1799 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1800 по 1899 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 1900 по 1999 гг.
+                            </button>
+                        </li>
+                        <li class="accordion-content">
+                            <button class="accordion-content-btn">
+                                    C 2000 г.
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="event">
+            <div class="container">
+                <h2 id="events" class="event-title">События</h2>
+                <ul class="event-list">
+                    <li class="event-items">
+                        <img class="event-items-img event-decktop-img" src="img/events/events-1.jpg" alt="">
+                        <img class="event-items-img event-laptop-img" src="img/events/events-1-1024.jpg" alt="">
+                        <img class="event-items-img event-tablet-img" src="img/events/events-1-768.jpg" alt="">
+
+                        <div class="event-items-content-container">
+                            <div class="event-discribe-img-container">
+                                <span class="discribe-img">Музей им.&nbsp;Щусева</span>
+                                <span class="discribe-img">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</span>
+                            </div>
+                            <h3 class="event-items-title">Книжная гравюра в живом восприятии</h3>
+                            <p class="event-items-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                            <a href="#" class="event-items-link">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="event-items">
+                        <img class="event-items-img event-decktop-img " src="img/events/events-2.jpg" alt="">
+                        <img class="event-items-img event-laptop-img" src="img/events/events-2-1024.jpg" alt="">
+                        <img class="event-items-img event-tablet-img" src="img/events/events-2-768.jpg" alt="">
+                        <div class="event-items-content-container">
+                            <div class="event-discribe-img-container">
+                                <span class="discribe-img">ММОМА</span>
+                                <span class="discribe-img">24 марта 19:00</span>
+                            </div>
+                            <h3 class="event-items-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                            <p class="event-items-discribe">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                            <a href="#" class="event-items-link">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="event-items  tablet-items-add">
+                        <img class="event-items-img event-decktop-img " src="img/events/events-3.jpg" alt="">
+                        <img class="event-items-img event-laptop-img" src="img/events/events-3-1024.jpg" alt="">
+                        <img class="event-items-img event-tablet-img" src="img/events/events-3-768.jpg" alt="">
+                        <div class="event-items-content-container">
+                            <div class="event-discribe-img-container">
+                                <span class="discribe-img">Еврейский музей</span>
+                                <span class="discribe-img"> с 31 марта по 21 апреля</span>
+                            </div>
+                            <h3 class="event-items-title">Выставка «Формация 2020»</h3>
+                            <p class="event-items-discribe">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                            <a href="#" class="event-items-link">Подробнее</a>
+                        </div>
+                    </li>
+
+                    <li class="event-items add-items">
+                        <img class="event-items-img event-decktop-img " src="img/events/events-4.jpg" alt="">
+                        <img class="event-items-img event-laptop-img" src="img/events/events-4-1024.jpg" alt="">
+                        <img class="event-items-img event-tablet-img" src="img/events/events-4-768.jpg" alt="">
+                        <div class="event-items-content-container">
+                            <div class="event-discribe-img-container">
+                                <span class="discribe-img">Третьяковка на Крымском валу</span>
+                                <span class="discribe-img"> с 30 марта по 30 апреля</span>
+                            </div>
+                            <h3 class="event-items-title">XXIV Международная биеннале молодого искусства</h3>
+                            <p class="event-items-discribe">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+                            <a href="#" class="event-items-link">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="event-items add-items">
+                        <img class="event-items-img event-decktop-img " src="img/events/events-5.jpg" alt="">
+                        <img class="event-items-img event-laptop-img" src="img/events/events-5-1024.jpg" alt="">
+                        <img class="event-items-img event-tablet-img" src="img/events/events-5-768.jpg" alt="">
+                        <div class="event-items-content-container">
+                            <div class="event-discribe-img-container">
+                                <span class="discribe-img">ММАМ</span>
+                                <span class="discribe-img">с 8 апреля по 20 мая</span>
+                            </div>
+                            <h3 class="event-items-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                            <p class="event-items-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                            <a href="#" class="event-items-link">Подробнее</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="event-btn">Все события</button>
+                <div class="mobile-event">
+                    <div id="swiper-event" class="swiper-container swiper-container-event">
+                        <div class="swiper-wrapper swiper-wrapper-event">
+                            <div class="swiper-slide event-items ">
+                                <img class="event-items-img" src="img/events/events-1-1024.jpg" alt="">
+                                <div class="event-items-content-container">
+                                    <div class="event-discribe-img-container">
+                                        <span class="discribe-img">Музей им.&nbsp;Щусева</span>
+                                        <span class="discribe-img">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</span>
+                                    </div>
+                                    <h3 class="event-items-title">Книжная гравюра в живом восприятии</h3>
+                                    <p class="event-items-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                    <a href="#" class="event-items-link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-items ">
+                                <img class="event-items-img" src="img/events/events-2-1024.jpg" alt="">
+                                <div class="event-items-content-container">
+                                    <div class="event-discribe-img-container">
+                                        <span class="discribe-img">ММОМА</span>
+                                        <span class="discribe-img">24 марта 19:00</span>
+                                    </div>
+                                    <h3 class="event-items-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                                    <p class="event-items-discribe">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                                    <a href="#" class="event-items-link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-items ">
+                                <img class="event-items-img" src="img/events/events-3-1024.jpg" alt="">
+                                <div class="event-items-content-container">
+                                    <div class="event-discribe-img-container">
+                                        <span class="discribe-img">Еврейский музей</span>
+                                        <span class="discribe-img"> с 31 марта по 21 апреля</span>
+                                    </div>
+                                    <h3 class="event-items-title">Выставка «Формация 2020»</h3>
+                                    <p class="event-items-discribe">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                                    <a href="#" class="event-items-link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-items ">
+                                <img class="event-items-img" src="img/events/events-4-1024.jpg" alt="">
+                                <div class="event-items-content-container">
+                                    <div class="event-discribe-img-container">
+                                        <span class="discribe-img">Третьяковка на Крымском валу</span>
+                                        <span class="discribe-img"> с 30 марта по 30 апреля</span>
+                                    </div>
+                                    <h3 class="event-items-title">XXIV Международная биеннале молодого искусства</h3>
+                                    <p class="event-items-discribe">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+                                    <a href="#" class="event-items-link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide event-items">
+                                <img class="event-items-img" src="img/events/events-5-1024.jpg" alt="">
+                                <div class="event-items-content-container">
+                                    <div class="event-discribe-img-container">
+                                        <span class="discribe-img">ММАМ</span>
+                                        <span class="discribe-img">с 8 апреля по 20 мая</span>
+                                    </div>
+                                    <h3 class="event-items-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                                    <p class="event-items-discribe">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                    <a href="#" class="event-items-link">Подробнее</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-event"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="publication">
+            <div class="container">
+                <div class="publication-container">
+
+                    <div class="publication-discribe">
+                        <h2 id="publication" class="publication-title">Издания</h2>
+                        <span class="publication-checkbox-title">Категории</span>
+                        <div class="publication-chechbox-continer">
+
+                            <label class="publication-label-checkbox">
+                            <input  class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Бестселлеры</span>
+                            
+                            </label>
+                            <label class="publication-label-checkbox ">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Искусство</span>
+                            </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Архитектура</span>
+                            </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span> 
+                            <span>Дизайн</span>
+                            </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Мода </span>
+                             </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                           
+                            <span></span>
+                            <span> Детям </span>
+                            </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Художественная литература </span>
+                             </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Публицистика </span>
+                            </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Путеводители </span>
+                             </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Философия </span>
+                            </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Учебная литература </span>
+                            </label>
+                            <label class="publication-label-checkbox">
+                            <input class="publication-checkbox" type="checkbox" name="check">
+                            
+                            <span></span>
+                            <span>Журналы и газеты</span>
+                            </label>
+                        </div>
+                        <div class="container-mobile-chose-checkbox">
+                            <button class="mobile-btn-choose-checkbox">Категории</button>
+
+                            <ul class="droplist-choose-checkbox">
+                                <li data-target="bestsellers" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                <input data-gener="bestsellers" class="publication-checkbox" type="checkbox" name="check">
+                                <span></span>
+                                <span>Бестселлеры</span>
+                                </label></li>
+                                <li data-target="art" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="art" class="publication-checkbox" type="checkbox" name="check">
+                                    
+                                    <span></span>
+                                    <span>Искусство</span>
+                                    </label>
+                                </li>
+                                <li data-target="architecture" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="architecture" class="publication-checkbox" type="checkbox" name="check">
+                                   
+                                    <span></span>
+                                    <span> Архитектура</span>
+                                    </label>
+                                </li>
+                                <li data-target="design" class="droplist-choose-checkbox-items droplist-choose-checkbox-items-checked">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="design" class="publication-checkbox" type="checkbox" name="check" checked>
+                                    
+                                    <span></span>
+                                    <span>Дизайн</span>
+                                    </label>
+                                </li>
+                                <li data-target="fashion" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="fashion" class="publication-checkbox" type="checkbox" name="check">
+                                    
+                                    <span></span>
+                                    <span>Мода </span>
+                                    </label>
+                                </li>
+                                <li data-target="children" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="children" class="publication-checkbox" type="checkbox" name="check">
+                                    
+                                    <span></span>
+                                    <span>Детям </span>
+                                    </label>
+                                </li>
+                                <li data-target="fiction" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="fiction" class="publication-checkbox" type="checkbox" name="check">
+                                    
+                                    <span></span>
+                                    <span>Художественная литература </span>
+                                    </label>
+                                </li>
+                                <li data-target="journalism" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="journalism" class="publication-checkbox" type="checkbox" name="check">
+                                   
+                                    <span></span>
+                                    <span> Публицистика </span>
+                                    </label>
+                                </li>
+                                <li data-target="travel" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="travel" class="publication-checkbox" type="checkbox" name="check">
+                                    
+                                    <span></span>
+                                    <span>Путеводители  </span>
+                                    </label>
+                                </li>
+                                <li data-target="philosophy" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="philosophy" class="publication-checkbox" type="checkbox" name="check">
+                                    
+                                    <span></span>
+                                    <span>Философия </span>
+                                    </label>
+                                </li>
+                                <li data-target="educational" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="educational" class="publication-checkbox" type="checkbox"  name="check">
+                                    
+                                    <span></span>
+                                    <span>Учебная литература </span>
+                                    </label>
+                                </li>
+                                <li data-target="newspapers" class="droplist-choose-checkbox-items">
+                                    <label class="publication-label-checkbox">
+                                    <input data-gener="newspapers" class="publication-checkbox" type="checkbox" name="check">
+                                    
+                                    <span></span>
+                                    <span>Журналы и газеты</span>
+                                    </label>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="price-container">
+                            <span class="price-titel">Цена</span>
+                            <div class="porice-input-container">
+                                От
+                                <input value="50" class="price-input" type="number"> до
+                                <input value="25000" class="price-input" type="number"> руб.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-publication">
+                        <div id="swiper-publication" class="swiper-container swiper-container-publication">
+                            <div class="swiper-gallery-nav-container publication-modifications">
+                                <div class="swiper-button-prev-gallery swiper-button-prev-publication "></div>
+                                <div class="swiper-pagination swiper-pagination-gallery swiper-pagination-publication"></div>
+                                <div class="swiper-button-next-gallery"></div>
+                            </div>
+                            <div class="swiper-wrapper swiper-wrapper-publication">
+                                <div class="swiper-slide swiper-slide-publication">
+
+                                    <img class="swiper-slide-img-publication" src="img/publications/publications-1.jpg" alt="">
+                                    <div class="discribe-book-container">
+                                        <span class="publication-name-book">Искусство цвета </span>
+                                        <span class="publication-author-book">Иттен, Иоханнес</span>
+                                        <em class="publication-price-book">620 руб</em>
+                                    </div>
+                                    <button class="publication-slider-btn">Заказать</button>
+                                </div>
+                                <div class="swiper-slide swiper-slide-publication">
+                                    <img class="swiper-slide-img-publication" src="img/publications/publications-2.jpg" alt="">
+                                    <div class="discribe-book-container">
+                                        <span class="publication-name-book">Типографика</span>
+                                        <span class="publication-author-book">Рудер, Эмиль</span>
+                                        <em class="publication-price-book">2 450 руб</em>
+                                    </div>
+                                    <button class="publication-slider-btn">Заказать</button>
+                                </div>
+                                <div class="swiper-slide swiper-slide-publication">
+                                    <img class="swiper-slide-img-publication" src="img/publications/publications-3.jpg" alt="">
+                                    <div class="discribe-book-container">
+                                        <span class="publication-name-book">Книга про буквы</span>
+                                        <span class="publication-author-book">Гордон, Юрий</span>
+                                        <em class="publication-price-book">2 200 руб</em>
+                                    </div>
+                                    <button class="publication-slider-btn">Заказать</button>
+                                </div>
+                                <div class="swiper-slide swiper-slide-publication">
+                                    <img class="swiper-slide-img-publication" src="img/publications/publications-4.jpg" alt="">
+                                    <div class="discribe-book-container">
+                                        <span class="publication-name-book">Николай Ильин</span>
+                                        <span class="publication-author-book swiper-slide-publication-desktop">Кричевский, Владимир</span>
+                                        <span class="publication-author-book swiper-slide-publication-tablet">Кричевский, Вла...</span>
+                                        <em class="publication-price-book">1 100 руб</em>
+                                    </div>
+                                    <button class="publication-slider-btn">Заказать</button>
+                                </div>
+                                <div class="swiper-slide swiper-slide-publication">
+                                    <img class="swiper-slide-img-publication" src="img/publications/publications-5.jpg" alt="">
+
+                                    <div class="discribe-book-container">
+                                        <span class="publication-name-book swiper-slide-publication-desktop">Модульные сетки в граф...</span>
+                                        <span class="publication-author-book swiper-slide-publication-desktop">Мюллер-Брокманн, Йозеф</span>
+                                        <span class="publication-name-book swiper-slide-publication-tablet">Модульные сет... </span>
+                                        <span class="publication-author-book swiper-slide-publication-tablet">Мюллер-Брокма...</span>
+                                        <em class="publication-price-book">1 450 руб</em>
+                                    </div>
+                                    <button class="publication-slider-btn">Заказать</button>
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-publication">
+                                    <img class="swiper-slide-img-publication" src="img/publications/publications-6.jpg" alt="">
+
+                                    <div class="discribe-book-container">
+                                        <span class="publication-name-book swiper-slide-publication-desktop">Эволюция графических ст...</span>
+                                        <span class="publication-author-book ">Хеллер, Чваст</span>
+                                        <span class="publication-name-book swiper-slide-publication-tablet">Эволюция граф...  </span>
+                                        <em class="publication-price-book">3 200 руб</em>
+                                    </div>
+                                    <button class="publication-slider-btn">Заказать</button>
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-publication">
+                                    <img class="swiper-slide-img-publication" src="img/publications/publications-7.jpg" alt="">
+
+                                    <div class="discribe-book-container">
+                                        <span class="publication-name-book swiper-slide-publication-desktop">Искусство и визуальное в...</span>
+                                        <span class="publication-author-book "> Арнхейм, Рудольф</span>
+                                        <span class="publication-name-book swiper-slide-publication-tablet">Искусство и ви...  </span>
+                                        <em class="publication-price-book">2 200 руб</em>
+                                    </div>
+                                    <button class="publication-slider-btn">Заказать</button>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publication-books-mobile">
+                        <ul class="publication-books-mobile-list">
+                            <li class="publication-books-mobile-items">
+                                <img class="publication-books-img-mobile" src="img/publications/publications-1-320.jpg" alt="">
+                                <div class="discribe-book-container-mobile">
+                                    <span class="publication-name-book-mobile">Искусство цвета</span>
+                                    <span class="publication-author-book-mobile">Иттен, Иоханнес</span>
+                                    <em class="publication-price-book-mobile">620 руб</em>
+                                </div>
+                                <button class="publication-slider-btn">Заказать</button>
+                            </li>
+                            <li class="publication-books-mobile-items">
+                                <img class="publication-books-img-mobile" src="img/publications/publications-2-320.jpg" alt="">
+                                <div class="discribe-book-container-mobile">
+                                    <span class="publication-name-book-mobile">Типографика</span>
+                                    <span class="publication-author-book-mobile">Рудер, Эмиль</span>
+                                    <em class="publication-price-book-mobile">2 450 руб</em>
+                                </div>
+                                <button class="publication-slider-btn">Заказать</button>
+                            </li>
+                            <li class="publication-books-mobile-items">
+                                <img class="publication-books-img-mobile" src="img/publications/publications-3-320.jpg" alt="">
+                                <div class="discribe-book-container-mobile">
+                                    <span class="publication-name-book-mobile">Книга про буквы</span>
+                                    <span class="publication-author-book-mobile">Гордон, Юрий</span>
+                                    <em class="publication-price-book-mobile">2 200 руб</em>
+                                </div>
+                                <button class="publication-slider-btn">Заказать</button>
+                            </li>
+                            <li class="publication-books-mobile-items">
+                                <img class="publication-books-img-mobile" src="img/publications/publications-4-320.jpg" alt="">
+                                <div class="discribe-book-container-mobile">
+                                    <span class="publication-name-book-mobile">Николай Ильин</span>
+                                    <span class="publication-author-book-mobile">Кричевский, Влади...</span>
+                                    <em class="publication-price-book-mobile">1 100 руб</em>
+                                </div>
+                                <button class="publication-slider-btn">Заказать</button>
+                            </li>
+                            <li class="publication-books-mobile-items">
+                                <img class="publication-books-img-mobile" src="img/publications/publications-5-320.jpg" alt="">
+                                <div class="discribe-book-container-mobile">
+                                    <span class="publication-name-book-mobile">Модульные сетки... </span>
+                                    <span class="publication-author-book-mobile">Мюллер-Брокманн...</span>
+                                    <em class="publication-price-book-mobile">1 450 руб</em>
+                                </div>
+                                <button class="publication-slider-btn">Заказать</button>
+                            </li>
+                            <li class="publication-books-mobile-items">
+                                <img class="publication-books-img-mobile" src="img/publications/publications-6-320.jpg" alt="">
+                                <div class="discribe-book-container-mobile">
+                                    <span class="publication-name-book-mobile">Эволюция графич... </span>
+                                    <span class="publication-author-book-mobile">Хеллер, Чваст</span>
+                                    <em class="publication-price-book-mobile">3 200 руб</em>
+                                </div>
+                                <button class="publication-slider-btn">Заказать</button>
+                            </li>
+                            <li class="publication-books-mobile-items">
+                                <img class="publication-books-img-mobile" src="img/publications/publications-7-320.jpg" alt="">
+                                <div class="discribe-book-container-mobile">
+                                    <span class="publication-name-book-mobile">Искусство и визуа... </span>
+                                    <span class="publication-author-book-mobile">Арнхейм, Рудольф</span>
+                                    <em class="publication-price-book-mobile">2 200 руб</em>
+                                </div>
+                                <button class="publication-slider-btn">Заказать</button>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <h2 id="projects" class="projects-title">Проекты</h2>
+                <p class="projects-discribe"> Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до
+                    степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <span class="projects-tooltip-container"><span tabindex="0" class="projects-tooltip-marker"><span class="projects-tooltip-popup first-tooltip">Пример современных тенденций - современная методология разработки </span></span>
+                    </span>
+                    обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <span class="projects-tooltip-container"><span tabindex="0" class="projects-tooltip-marker"><span class="projects-tooltip-popup second-tooltip">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции   </span></span>
+                    </span>
+                    исключительно в разрезе маркетинговых и финансовых <span class="projects-tooltip-container"><span tabindex="0" class="projects-tooltip-marker"><span class="projects-tooltip-popup third-tooltip">В стремлении повысить качество   </span></span>
+                    </span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной
+                    неузнаваемости. Подробнее: <a class="projects-link" href="#"> blanchard-art.ru/projects/about</a></p>
+                <h3 class="projects-title-partners">Партнёры проектов:</h3>
+                <div class="swiper-container-projects">
+                    <div class="swiper-button-prev swiper-button-prev-projects"></div>
+                    <div class="swiper-container swiper-projects">
+
+                        <div class="swiper-wrapper swiper-wrapper-projects">
+
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img freelands-foundation" src="img/projects/freelands-foundation.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img institute-for-contem" src="img/projects/institute-for-contem.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img workhouse" src="img/projects/workhouse.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img one-eight-four-nine" src="img/projects/1849.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img hiscox" src="img/projects/hiscox.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img camden" src="img/projects/camden.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img stassen" src="img/projects/stassen.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img watts-gallery" src="img/projects/watts-gallery.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-projects">
+                                <img class="projects-slide-img esad" src="img/projects/esad.png" alt="">
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="swiper-button-next swiper-button-next-projects"></div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <h2 id="contacts" class="contacts-title">Контакты</h2>
+            </div>
+
+            <div class="contacts-content-container">
+
+                <div class="form-container">
+                    <p class="form-title decktop-title">Шоурум №4</p>
+                    <span class="form-address decktop-title">Леонтьевский переулок, дом 5, строение 1</span>
+                    <span class="form-label">Заказать обратный звонок</span>
+                    <form class="contacts-form" method="POST">
+                        <label class="form-input-label">
+                            <input type="hidden" name="admin_email" value="diomisha@gmail.com">
+                            <input type="hidden" name="form_subject" value="Тема письма">
+                                <input type="text" name="FIO" placeholder="Имя*" id="name" required class="form-input" data-validate-field="name">
+                            </label>
+                        <label class="form-input-label"> 
+                                
+                                <input type="tel" placeholder="Телефон*" class="form-input" required data-validate-field="tel">
+                            </label>
+
+                        <button type="submit" class="form-btn">Заказать</button>
+                    </form>
+                    <span class="contatcs-list-discribe">Связаться в один клик</span>
+                    <ul class="contacts-list">
+                        <li class="contacts-items">
+                            <a href="#" class="contacts-link whatsapp"></a>
+                        </li>
+                        <li class="contacts-items">
+                            <a href="#" class="contacts-link telegram"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="map-decktop" class="map-container"></div>
+                <div class="mobile-title">
+                    <p class="form-title">Шоурум №4</p>
+                    <span class="form-address">Леонтьевский переулок, дом 5, строение 1</span>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content-container">
+                <img class="footer-logo" src="img/footer/footer-logo.svg" alt="">
+                <ul class="footer-list">
+                    <li class="footer-items">
+                        <a class="footer-link vk" href="#"></a>
+                    </li>
+                    <li class="footer-items">
+                        <a class="footer-link instagram" href="#"></a>
+                    </li>
+                    <li class="footer-items">
+                        <a class="footer-link fb" href="#"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

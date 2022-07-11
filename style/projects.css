@@ -1,0 +1,499 @@
+.projects {
+    padding-bottom: 80px;
+}
+
+.projects-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 16px;
+}
+
+.projects-discribe {
+    max-width: 1080px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.projects-link {
+    font-weight: 400;
+    color: #9D5CD0;
+    -webkit-transition-property: border-bottom, color, font-weight;
+    -o-transition-property: border-bottom, color, font-weight;
+    transition-property: border-bottom, color, font-weight;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .15s;
+    -o-transition-duration: .15s;
+    transition-duration: .15s;
+}
+
+.projects-link:focus {
+    outline: 2px solid #7943A4;
+}
+
+.projects-link:hover {
+    font-weight: 600;
+    border-bottom: 1px solid #9D5CD0;
+}
+
+.projects-link:active {
+    font-weight: 600;
+    border-bottom: 1px solid #7943A4;
+    color: #7943A4;
+}
+
+.projects-tooltip-container {
+    display: inline-block;
+    position: relative;
+}
+
+.projects-tooltip-marker {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/projects/i.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+    -webkit-transition: background-image .15s ease-in-out;
+    -o-transition: background-image .15s ease-in-out;
+    transition: background-image .15s ease-in-out;
+}
+
+.projects-tooltip-popup {
+    position: absolute;
+    display: inline-block;
+    top: -64px;
+    left: 49.5%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 264px;
+    padding: 8px 11px;
+    background-color: #CACACA;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0;
+    color: white;
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    text-align: center;
+}
+
+.projects-tooltip-popup::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(45deg) translateX(-50%);
+    -ms-transform: rotate(45deg) translateX(-50%);
+    transform: rotate(45deg) translateX(-50%);
+    background-color: #CACACA;
+    left: 49.4%;
+    bottom: -9px;
+    z-index: 400;
+}
+
+.projects-tooltip-marker:hover,
+.projects-tooltip-marker:focus {
+    background-image: url("../img/projects/i-hover.svg");
+}
+
+.projects-tooltip-marker:hover>.projects-tooltip-popup {
+    opacity: 1;
+}
+
+.projects-tooltip-marker:focus>.projects-tooltip-popup {
+    opacity: 1;
+}
+
+.second-tooltip {
+    top: -74px;
+}
+
+.third-tooltip {
+    top: -44px;
+    width: 232px;
+}
+
+.projects-title-partners {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 23px;
+}
+
+.swiper-projects {
+    width: 1460px;
+    margin: 0;
+}
+
+.swiper-container-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.swiper-wrapper-projects {
+    width: 1460px;
+}
+
+.swiper-slide-projects {
+    width: 450px;
+    background-repeat: no-repeat;
+    border: 1px solid #CACACA;
+    height: 150px;
+    background-position: center center;
+    -webkit-transition-property: border, background-image;
+    -o-transition-property: border, background-image;
+    transition-property: border, background-image;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: .15s;
+    -o-transition-duration: .15s;
+    transition-duration: .15s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.swiper-slide-projects:hover {
+    border: 1px solid #885BC7;
+}
+
+.swiper-slide-projects:hover>.projects-slide-img {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.swiper-button-prev-projects {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/projects/navigation-left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    margin-right: 45px;
+    margin-top: 60px;
+    left: 0;
+    -webkit-transition: background-image .15s ease-in-out;
+    -o-transition: background-image .15s ease-in-out;
+    transition: background-image .15s ease-in-out;
+}
+
+.projects-slide-img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.freelands-foundation {
+    width: 244px;
+}
+
+.institute-for-contem {
+    width: 330px;
+}
+
+.hiscox {
+    width: 173px;
+}
+
+.workhouse {
+    width: 269px;
+}
+
+.camden {
+    width: 252px;
+}
+
+.stassen {
+    width: 286px;
+}
+
+.watts-gallery {
+    width: 185px;
+}
+
+.esad {
+    width: 229px;
+}
+
+.swiper-button-prev-projects::after {
+    content: '';
+}
+
+.swiper-button-prev-projects:hover {
+    background-image: url("../img/projects/navigation-left-hover.svg");
+}
+
+.swiper-button-prev-projects:active {
+    background-image: url("../img/projects/navigation-left-active.svg");
+}
+
+.swiper-button-prev-projects:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 0 2px #7943A4;
+    box-shadow: 0 0 0 2px #7943A4;
+}
+
+.swiper-button-next-projects {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/projects/navigation-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    margin-left: 45px;
+    margin-top: 60px;
+    right: 2px;
+    -webkit-transition: background-image .15s ease-in-out;
+    -o-transition: background-image .15s ease-in-out;
+    transition: background-image .15s ease-in-out;
+}
+
+.swiper-button-next-projects::after {
+    content: '';
+}
+
+.swiper-button-next-projects:hover {
+    background-image: url("../img/projects/navigation-right-hover.svg");
+}
+
+.swiper-button-next-projects:active {
+    background-image: url("../img/projects/navigation-right-active.svg");
+}
+
+.swiper-button-next-projects:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 0 2px #7943A4;
+    box-shadow: 0 0 0 2px #7943A4;
+}
+
+@media(max-width:1120px) {
+    .projects {
+        margin-bottom: 80px;
+        padding-bottom: 0;
+    }
+    .swiper-button-prev-projects {
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+    .swiper-button-next-projects {
+        margin-top: 50px;
+        margin-left: 23px;
+    }
+    .swiper-slide-projects {
+        width: 384px;
+        height: 128px;
+    }
+    .swiper-wrapper-projects {
+        width: 818px;
+    }
+    .swiper-projects {
+        width: 818px;
+    }
+    .freelands-foundation {
+        width: 210px;
+    }
+    .institute-for-contem {
+        width: 283px;
+    }
+    .workhouse {
+        width: 229px;
+    }
+    .one-eight-four-nine {
+        width: 105px;
+    }
+    .hiscox {
+        width: 148px;
+    }
+    .camden {
+        width: 215px;
+    }
+    .stassen {
+        width: 244px;
+    }
+    .watts {
+        width: 158px;
+    }
+    .esad {
+        width: 196px;
+    }
+    .projects-tooltip-popup {
+        width: auto;
+        top: -120px;
+    }
+    .second-tooltip {
+        top: -200px;
+    }
+    .third-tooltip {
+        top: -90px;
+    }
+}
+
+@media(max-width:768px) {
+    .projects-title-partners {
+        margin-bottom: 30px;
+    }
+    .swiper-button-prev-projects {
+        margin-top: 38px;
+    }
+    .swiper-button-next-projects {
+        margin-top: 38px;
+        right: 13px;
+    }
+    .swiper-slide-projects {
+        width: 264px;
+        height: 106px;
+    }
+    .swiper-wrapper-projects {
+        width: 562px;
+    }
+    .swiper-projects {
+        width: 562px;
+    }
+    .freelands-foundation {
+        width: 210px;
+    }
+    .institute-for-contem {
+        width: 217px;
+    }
+    .workhouse {
+        width: 195px;
+    }
+    .one-eight-four-nine {
+        width: 105px;
+    }
+    .hiscox {
+        width: 121px;
+    }
+    .camden {
+        width: 176px;
+    }
+    .stassen {
+        width: 194px;
+    }
+    .watts {
+        width: 143px;
+    }
+    .esad {
+        width: 182px;
+    }
+    .projects-discribe {
+        max-width: 659px;
+        margin-bottom: 26px;
+    }
+    .projects-link {
+        display: block;
+    }
+}
+
+@media(max-width:610px) {
+    .projects {
+        margin-bottom: 50px;
+    }
+    .projects-title {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 12px;
+    }
+    .projects-title-partners {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .swiper-button-prev-projects {
+        margin-top: 18px;
+        margin-right: 17px;
+    }
+    .swiper-button-next-projects {
+        margin-top: 18px;
+        right: 0;
+        margin-left: 18px;
+    }
+    .swiper-slide-projects {
+        height: 65px;
+        width: 100%;
+    }
+    .swiper-projects {
+        width: 90%;
+    }
+    .swiper-wrapper-projects {
+        max-width: 440px;
+        width: auto;
+    }
+    .freelands-foundation {
+        width: 109px;
+    }
+    .institute-for-contem {
+        width: 141px;
+    }
+    .workhouse {
+        width: 116px;
+    }
+    .one-eight-four-nine {
+        width: 53px;
+    }
+    .hiscox {
+        width: 75px;
+    }
+    .camden {
+        width: 109px;
+    }
+    .stassen {
+        width: 123px;
+    }
+    .watts {
+        width: 80px;
+    }
+    .esad {
+        width: 99px;
+    }
+    .projects-discribe {
+        max-width: 500px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:482px) {
+    .projects-tooltip-popup {
+        left: -120%;
+        top: -120px;
+    }
+    .projects-tooltip-popup::after {
+        left: 75%;
+    }
+    .second-tooltip {
+        top: -200px;
+    }
+    .third-tooltip {
+        top: -90px;
+    }
+}
